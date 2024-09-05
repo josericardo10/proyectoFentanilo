@@ -1,4 +1,4 @@
-base de datos numero uno camioneros 
+/*base de datos numero uno camioneros */
 CREATE TABLE camioneros(
     dni INT(5) PRIMARY KEY NOT NULL,
     nombre VARCHAR(60),
@@ -20,4 +20,4 @@ INSERT INTO `camioneros`(`dni`, `nombre`, `telefono`, `salario`, `dirreccion`, `
 (071,'carmen',5525304110,1950,'san pablo ','tlane');
 
 SELECT *FROM camioneros;
-PRIMERA LISTA
+/*PRIMERA LISTA*/
