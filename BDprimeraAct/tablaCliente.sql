@@ -15,3 +15,4 @@ INSERT INTO `producto` (`codigo`, `nombre`, `precio`) VALUES
 (315, 'pistadecarreras', 720),
 (777, 'carro', 80),
 (3356, 'Ares', 90000);
+----
