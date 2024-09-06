@@ -1,5 +1,5 @@
 CREATE TABLE `producto` (
-  `codigo` int(5) NOT NULL,
+  `codigo` int(5) NOT NULL PRIMARY KEY,
   `nombre` varchar(30) NOT NULL,
   `precio` int(5) NOT NULL
 )
