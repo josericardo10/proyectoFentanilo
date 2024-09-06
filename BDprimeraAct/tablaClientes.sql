@@ -1,5 +1,5 @@
 CREATE TABLE `cliente` (
-  `dni` int(3) NOT NULL,
+  `dni` int(3) NOT NULL PRIMARY KEY,
   `nombre` varchar(30) NOT NULL,
   `apellido` varchar(60) NOT NULL,
   `direccion` varchar(150) NOT NULL,
