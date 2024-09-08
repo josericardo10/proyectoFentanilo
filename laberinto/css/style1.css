@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: auto;
+}
+body{
+    background-color: #AA0111CC;
+}
+.peque{
+    width: 20px;
+    height: 20px;
+    border: .2px solid rgb(90,50,65);
+    border-collapse: collapses;
+}
+.inicio{
+    width: 20px;
+    height: 20px;
+}
+/*mis estilos no son nesecarios entregar*/
+/* Estilo para la capa flotante */
+.overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1001; /* Debe estar por encima de todo */
+}
+.overlay img {
+    width: 100px;
+    height: auto;
+}
+
+/* Capa transparente para bloquear la interacción */
+.block-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Debe estar por debajo del overlay */
+}
+
+body.block-scroll {
+    overflow: hidden; /* Deshabilita el scroll */
+}
