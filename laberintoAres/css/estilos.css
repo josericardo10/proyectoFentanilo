@@ -1,0 +1,11 @@
+.bloque{
+    width: 20px;
+    height: 20px;
+}
+#waos:hover{
+background-color: black;
+}
+*{
+    margin: auto;
+    padding: 0;
+}
