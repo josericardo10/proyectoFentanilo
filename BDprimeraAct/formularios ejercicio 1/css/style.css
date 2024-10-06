@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(130deg, skyblue, blue);
+}
+
+form span {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+form input {
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo específico para el botón */
+form .button input {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(130deg, blue, skyblue);
+    color: #FFFF;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+form .button input:hover {
+    background: linear-gradient(130deg, skyblue, blue);
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 0;
+}
+
+form .formgroup {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 584px) {
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    form .formgroup {
+        width: 100%;
+    }
+
+    .container form {
+        max-height: 400px;
+    }
+}

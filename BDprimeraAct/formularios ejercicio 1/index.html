@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Clientes</div>
+        <form action="php/registrarClientes.php" method="POST">
+            <div class="formgroup">
+                <span>Nombre</span>
+                <input placeholder="Ingresa tu nombre" type="text" name="nombre">
+            </div>
+            <div class="formgroup">
+                <span>Apellidos</span>
+                <input placeholder="Ingresa tus apellidos" type="text" name="apellidos">
+            </div>
+            <div class="formgroup">
+                <span>Dirección</span>
+                <input placeholder="Ingresa tu dirección" type="text" name="direccion">
+            </div>
+            <div class="formgroup">
+                <span>Fecha de nacimiento</span>
+                <input type="date" name="fechaNac">
+            </div>
+            <div class="button">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
