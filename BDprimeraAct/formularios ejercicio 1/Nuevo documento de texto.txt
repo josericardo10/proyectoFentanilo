@@ -1,0 +1,18 @@
+USE empresa;
+CREATE TABLE clientes (
+	id int(5) NOT NULL AUTO_INCREMENT PRIMARY key ,
+    nombre varchar (25),
+    apellidos varchar (25),
+    direccion varchar (50),
+    fechaNac DATE
+);
+CREATE TABLE producto(
+	codigo int(5) NOT NULL AUTO_INCREMENT PRIMARY key ,
+    nombre varchar (25),
+    precio DECIMAL(5,2) 
+);
+CREATE TABLE provedores(
+	nip int(5) NOT NULL AUTO_INCREMENT PRIMARY key ,
+    nombre varchar (25),
+    direccion varchar(50)
+);
