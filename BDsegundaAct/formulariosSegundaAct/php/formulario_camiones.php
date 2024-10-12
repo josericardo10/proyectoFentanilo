@@ -23,20 +23,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleForms.css">
     <title>Formulario Camiones</title>
 </head>
 <body>
-    <h1>Agregar Camión</h1>
-    <form method="POST" action="">
-        <label>Matrícula:</label><br>
-        <input type="text" name="matricula" required><br>
-        <label>Tipo:</label><br>
-        <input type="text" name="tipo" required><br>
-        <label>Modelo:</label><br>
-        <input type="text" name="modelo" required><br>
-        <label>Potencia:</label><br>
-        <input type="text" name="potencia" required><br>
-        <input type="submit" value="Enviar">
-    </form>
+
+    <div class="container">
+        <h1>Agregar Camión</h1>
+        <form method="POST" action="">
+            <div class="form-group">
+                <label for="matricula">Matrícula:</label>
+                <input type="text" name="matricula" id="matricula" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo">Tipo:</label>
+                <input type="text" name="tipo" id="tipo" required>
+            </div>
+            <div class="form-group">
+                <label for="modelo">Modelo:</label>
+                <input type="text" name="modelo" id="modelo" required>
+            </div>
+            <div class="form-group">
+                <label for="potencia">Potencia:</label>
+                <input type="text" name="potencia" id="potencia" required>
+            </div>
+            <div class="button-container">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
 </body>
 </html>
+

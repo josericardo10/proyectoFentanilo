@@ -21,16 +21,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleForms.css">
     <title>Formulario Provincias</title>
 </head>
 <body>
-    <h1>Agregar Provincia</h1>
-    <form method="POST" action="">
-        <label>Código Provincia:</label><br>
-        <input type="number" name="codigoProvincia" required><br>
-        <label>Nombre:</label><br>
-        <input type="text" name="nombre" required><br>
-        <input type="submit" value="Enviar">
-    </form>
+
+    <div class="container">
+        <h1>Agregar Provincia</h1>
+        <form method="POST" action="">
+            <div class="form-group">
+                <label for="codigoProvincia">Código Provincia:</label>
+                <input type="number" name="codigoProvincia" id="codigoProvincia" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <div class="button-container">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
 </body>
 </html>
