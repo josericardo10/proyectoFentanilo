@@ -20,29 +20,49 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleForms.css">
     <title>Formulario Camioneros</title>
 </head>
 <body>
-    <h1>Agregar Camionero</h1>
-    <form method="POST" action="">
-        <label>DNI:</label><br>
-        <input type="number" name="dni" required><br>
-        <label>Nombre:</label><br>
-        <input type="text" name="nombre" required><br>
-        <label>Teléfono:</label><br>
-        <input type="number" name="telefono" required><br>
-        <label>Salario:</label><br>
-        <input type="number" name="salario" required><br>
-        <label>Dirección:</label><br>
-        <input type="text" name="direccion" required><br>
-        <label>Localidad:</label><br>
-        <input type="text" name="localidad" required><br>
-        <input type="submit" value="Enviar">
-    </form>
+
+    <div class="container">
+        <h1>Agregar Camionero</h1>
+        <form method="POST" action="">
+            <div class="form-group">
+                <label for="dni">DNI:</label>
+                <input type="number" name="dni" id="dni" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="number" name="telefono" id="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="salario">Salario:</label>
+                <input type="number" name="salario" id="salario" required>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" name="direccion" id="direccion" required>
+            </div>
+            <div class="form-group">
+                <label for="localidad">Localidad:</label>
+                <input type="text" name="localidad" id="localidad" required>
+            </div>
+            <div class="button-container">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
 </body>
 </html>
+
