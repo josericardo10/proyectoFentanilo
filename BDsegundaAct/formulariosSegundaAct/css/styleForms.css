@@ -1,0 +1,98 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(130deg, #87CEEB, #1E90FF); /* Igual que el menú */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+/* Estilo para el contenedor */
+.container {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+    max-width: 600px;
+    width: 100%;
+}
+
+/* Estilo para el título */
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilo para los inputs y labels */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo claro para inputs */
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del botón de envío */
+.button-container {
+    text-align: center;
+}
+
+input[type="submit"] {
+    padding: 12px 30px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(130deg, #1E90FF, #87CEEB);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(130deg, #87CEEB, #1E90FF);
+    transform: translateY(-3px); /* Efecto de elevación */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 600px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}

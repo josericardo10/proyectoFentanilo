@@ -23,20 +23,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleForms.css">
     <title>Formulario Paquetes</title>
 </head>
 <body>
-    <h1>Agregar Paquete</h1>
-    <form method="POST" action="">
-        <label>Código:</label><br>
-        <input type="number" name="codigo" required><br>
-        <label>Descripción:</label><br>
-        <input type="text" name="descripcion" required><br>
-        <label>Destinatario:</label><br>
-        <input type="text" name="destinatario" required><br>
-        <label>Dirección del Destinatario:</label><br>
-        <input type="text" name="direccionDestinatario" required><br>
-        <input type="submit" value="Enviar">
-    </form>
+
+    <div class="container">
+        <h1>Agregar Paquete</h1>
+        <form method="POST" action="">
+            <div class="form-group">
+                <label for="codigo">Código:</label>
+                <input type="number" name="codigo" id="codigo" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <input type="text" name="descripcion" id="descripcion" required>
+            </div>
+            <div class="form-group">
+                <label for="destinatario">Destinatario:</label>
+                <input type="text" name="destinatario" id="destinatario" required>
+            </div>
+            <div class="form-group">
+                <label for="direccionDestinatario">Dirección del Destinatario:</label>
+                <input type="text" name="direccionDestinatario" id="direccionDestinatario" required>
+            </div>
+            <div class="button-container">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
 </body>
 </html>

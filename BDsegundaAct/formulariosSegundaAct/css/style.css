@@ -1,28 +1,67 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo y estilo general del cuerpo */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 50px;
+    background: linear-gradient(130deg, #87CEEB, #1E90FF); /* Degradado elegante */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
+/* Estilo para el título principal */
 h1 {
-    color: #333;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Sombra para el texto */
 }
 
+/* Estilos para el contenedor del menú */
 .menu {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
+/* Estilos para los enlaces del menú */
 .menu a {
     display: inline-block;
-    background-color: #007bff;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 600;
     color: white;
-    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
-    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo translúcido */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para darle profundidad */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Efecto hover en los enlaces */
 .menu a:hover {
-    background-color: #0056b3;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo más claro al hacer hover */
+    transform: translateY(-5px); /* Leve desplazamiento al hacer hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Aumentar la sombra en hover */
+}
+
+/* Responsividad para dispositivos más pequeños */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .menu a {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
 }
