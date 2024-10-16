@@ -65,6 +65,19 @@ input[type="number"] {
     text-align: center;
 }
 
+.return{    
+    padding: 12px 30px;
+    position: absolute;
+    
+    contain: content;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(130deg, #1E90FF, #87CEEB);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
 input[type="submit"] {
     padding: 12px 30px;
     font-size: 18px;
