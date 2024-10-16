@@ -13,8 +13,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             VALUES ('$dni', '$nombre', '$telefono', '$salario', '$direccion', '$localidad')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "Nuevo registro creado con éxito :D";
-        header('location: ../index.html');  
+        echo '<div >
+                <label>Nuevo registro creado con éxito :D<label>
+                <a class="return" href="../index.html">regresar<a>
+            </div>'; 
     } else {
         echo "Error: usuario ya existente " . $sql . "<br>" . $conn->error;
     }
@@ -25,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styleForms.css">
+    <link rel="stylesheet" href="../css/styleForms2.css">
     <title>Formulario Camioneros</title>
 </head>
 <body>
